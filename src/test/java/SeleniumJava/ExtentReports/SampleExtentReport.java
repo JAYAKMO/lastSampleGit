@@ -35,5 +35,21 @@ public class SampleExtentReport {
 		driver.get("https://www.amazon.in/");
 		driver.close();
 		extent.flush();
+		@Test
+		public void Demo2() {
+			extent.createTest("Demo2");
+			WebDriver driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.get("https://www.amazon.in/");
+			driver.close();
+			extent.flush();
+			@Test
+			public void Demo3() {
+				extent.createTest("Demo3");
+				WebDriver driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.get("https://www.amazon.in/");
+				driver.close();
+				extent.flush();
 	}
 }
